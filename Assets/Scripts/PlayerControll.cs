@@ -127,6 +127,7 @@ public class PlayerControll : MonoBehaviour
             _boxCollider.bounds.size.y);
     }
 
+    // 脚下射线检测
     void rayCheckFoot()
     {
         isFalling = newPosition.y < 0;
@@ -170,6 +171,7 @@ public class PlayerControll : MonoBehaviour
         }
     }
 
+    // 射线检测
     RaycastHit2D getRayCast(Vector2 rayOriginPoint, Vector2 rayDirection, float rayDistance, Color color,
         LayerMask mask,
         bool isShowGizmo = false)
